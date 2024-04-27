@@ -10,12 +10,20 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: JavaToolInstaller@0
+  displayName: 'Use Java 22'
+  inputs:
+    versionSpec: 22
+    jdkArchitectureOption: x64
+    jdkSourceOption: LocalDirectory
+    jdkFile: '$(build.sourcesdirectory)/jdk-22_linux-x64_bin.tar.gz'
+    jdkDestinationDirectory: '$(agent.toolsDirectory)/jdk22'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
+    jdkVersionOption: '1.22'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
