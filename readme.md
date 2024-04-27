@@ -1,5 +1,7 @@
 # Java 22
 
+[![Build status](https://dev.azure.com/hbvk/hbvk/_apis/build/status/hbvk-Maven-CI)](https://dev.azure.com/hbvk/hbvk/_build/latest?definitionId=40)
+
 | Release | EOL     | Class File Version |
 |---------|---------|--------------------|
 | 2024-03 | 2024-09 | 66.0               |
