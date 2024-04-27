@@ -1,7 +1,6 @@
 # Java 22
 
-[![Build status](https://dev.azure.com/hbvk/hbvk/_apis/build/status/hbvk-Maven-CI)](https://dev.azure.com/hbvk/hbvk/_build/latest?definitionId=40)
-
+[![Build Status](https://dev.azure.com/hbvk/java-test/_apis/build/status%2Fhbvk.java22?branchName=master)](https://dev.azure.com/hbvk/java-test/_build/latest?definitionId=41&branchName=master)
 | Release | EOL     | Class File Version |
 |---------|---------|--------------------|
 | 2024-03 | 2024-09 | 66.0               |
