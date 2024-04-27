@@ -1,10 +1,8 @@
 # Java 22
 
-|                    |         |
-|--------------------|---------|
-| Release            | 2024-03 |
-| EOL                | 2024-09 |
-| Class File Version | 66.0    |
+| Release | EOL     | Class File Version |
+|---------|---------|--------------------|
+| 2024-03 | 2024-09 | 66.0               |
 
 # New Features
 
