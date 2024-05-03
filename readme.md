@@ -8,16 +8,16 @@
 
 # New Features
 
-| feature                                               | JEP                                          | status            |
-|-------------------------------------------------------|----------------------------------------------|-------------------|
-| Region Pinning for G1                                 | [JEP 423](https://openjdk.java.net/jeps/423) | **final**         |
-| Statements before super()                             | [JEP 447](https://openjdk.java.net/jeps/447) | 1. Preview        |
-| Foreign Function & Memory API                         | [JEP 454](https://openjdk.java.net/jeps/454) | **final**         |
-| Unnamed Variables & Patterns                          | [JEP 456](https://openjdk.java.net/jeps/456) | **final**         |
-| Class-File API                                        | [JEP 457](https://openjdk.java.net/jeps/457) | 1. Preview        |
-| Launch Multi-File Source-Code Programs                | [JEP 458](https://openjdk.java.net/jeps/458) | **final**         |
-| String Templates                                      | [JEP 459](https://openjdk.java.net/jeps/459) | 2. Preview        |
-| 	Vector API                                           | [JEP 460](https://openjdk.java.net/jeps/460) | Seventh Incubator |
-| Stream Gatherers                                      | [JEP 461](https://openjdk.java.net/jeps/461) | 1. Preview        |
-| Structured Concurrency                                | [JEP 462](https://openjdk.java.net/jeps/462) | 2. Preview        |
-| Implicitly Declared Classes and Instance Main Methods | [JEP 463](https://openjdk.java.net/jeps/463) | 2. Preview        |
+| feature                                               | JEP                                          | status            | test                                                                            |
+|-------------------------------------------------------|----------------------------------------------|-------------------|---------------------------------------------------------------------------------|
+| Region Pinning for G1                                 | [JEP 423](https://openjdk.java.net/jeps/423) | **final**         |                                                                                 |
+| Statements before super()                             | [JEP 447](https://openjdk.java.net/jeps/447) | 1. Preview        | [test case](src/test/java/com/hbvk/jep447/Jep447StatementsBeforeSuperTest.java) |
+| Foreign Function & Memory API                         | [JEP 454](https://openjdk.java.net/jeps/454) | **final**         | [test case](src/test/java/com/hbvk/jep454/Jep454ForeignFunctionsTest.java)      |
+| Unnamed Variables & Patterns                          | [JEP 456](https://openjdk.java.net/jeps/456) | **final**         | [test case](src/test/java/com/hbvk/jep456/Jep456AnonymousVariableTest.java)     |
+| Class-File API                                        | [JEP 457](https://openjdk.java.net/jeps/457) | 1. Preview        |                                                                                 |
+| Launch Multi-File Source-Code Programs                | [JEP 458](https://openjdk.java.net/jeps/458) | **final**         |                                                                                 |
+| String Templates                                      | [JEP 459](https://openjdk.java.net/jeps/459) | 2. Preview        |                                                                                 |
+| Vector API                                            | [JEP 460](https://openjdk.java.net/jeps/460) | Seventh Incubator |                                                                                 |
+| Stream Gatherers                                      | [JEP 461](https://openjdk.java.net/jeps/461) | 1. Preview        |                                                                                 |
+| Structured Concurrency                                | [JEP 462](https://openjdk.java.net/jeps/462) | 2. Preview        |                                                                                 |
+| Implicitly Declared Classes and Instance Main Methods | [JEP 463](https://openjdk.java.net/jeps/463) | 2. Preview        |                                                                                 |
