@@ -30,7 +30,7 @@ class Jep454ForeignFunctionsTest {
         MethodHandle islower = linker
                 .downcallHandle(
                         stdlib.find("islower").orElseThrow(),
-                        FunctionDescriptor.of(ValueLayout.JAVA_BOOLEAN, ValueLayout.JAVA_CHAR));
+                        FunctionDescriptor.of(ValueLayout.JAVA_BOOLEAN, ValueLayout.JAVA_INT));
         assertEquals(Boolean.TRUE, islower.invoke('l'));
         assertEquals(Boolean.FALSE, islower.invoke('L'));
         assertEquals(Boolean.FALSE, islower.invoke('7'));
@@ -41,7 +41,7 @@ class Jep454ForeignFunctionsTest {
         MethodHandle isdigit = linker
                 .downcallHandle(
                         stdlib.find("isdigit").orElseThrow(),
-                        FunctionDescriptor.of(ValueLayout.JAVA_BOOLEAN, ValueLayout.JAVA_CHAR));
+                        FunctionDescriptor.of(ValueLayout.JAVA_BOOLEAN, ValueLayout.JAVA_INT));
         assertEquals(Boolean.FALSE, isdigit.invoke('l'));
         assertEquals(Boolean.FALSE, isdigit.invoke('L'));
         assertEquals(Boolean.TRUE, isdigit.invoke('7'));
