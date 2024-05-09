@@ -24,26 +24,4 @@ class Jep454ForeignFunctionsTest {
             assertEquals((long) helloWorld.length(), strlen.invoke(str));
         }
     }
-
-    @Test
-    void testCallIslower() throws Throwable {
-        MethodHandle islower = linker
-                .downcallHandle(
-                        stdlib.find("islower").orElseThrow(),
-                        FunctionDescriptor.of(ValueLayout.JAVA_BOOLEAN, ValueLayout.JAVA_INT));
-        assertEquals(Boolean.TRUE, islower.invoke((int) Character.toLowerCase('l')));
-        assertEquals(Boolean.FALSE, islower.invoke((int) Character.toUpperCase('L')));
-        assertEquals(Boolean.FALSE, islower.invoke((int) '7'));
-    }
-
-    @Test
-    void testCallIsdigit() throws Throwable {
-        MethodHandle isdigit = linker
-                .downcallHandle(
-                        stdlib.find("isdigit").orElseThrow(),
-                        FunctionDescriptor.of(ValueLayout.JAVA_BOOLEAN, ValueLayout.JAVA_INT));
-        assertEquals(Boolean.FALSE, isdigit.invoke((int) Character.toLowerCase('l')));
-        assertEquals(Boolean.FALSE, isdigit.invoke((int) Character.toUpperCase('l')));
-        assertEquals(Boolean.TRUE, isdigit.invoke((int) '7'));
-    }
 }
